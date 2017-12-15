@@ -20,6 +20,8 @@
 		095B27781FE3A90200042FC4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095B27721FE3A90200042FC4 /* Result.swift */; };
 		09D5C3911FE3C425009F87D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D5C38F1FE3C425009F87D9 /* ViewController.swift */; };
 		09D5C3921FE3C425009F87D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D5C3901FE3C425009F87D9 /* AppDelegate.swift */; };
+		09D5C3991FE3CC21009F87D9 /* MovieFeedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D5C3971FE3CC20009F87D9 /* MovieFeedResult.swift */; };
+		09D5C39A1FE3CC21009F87D9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D5C3981FE3CC20009F87D9 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		095B27721FE3A90200042FC4 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		09D5C38F1FE3C425009F87D9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = SetupDemo/ViewController.swift; sourceTree = "<group>"; };
 		09D5C3901FE3C425009F87D9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SetupDemo/AppDelegate.swift; sourceTree = "<group>"; };
+		09D5C3971FE3CC20009F87D9 /* MovieFeedResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieFeedResult.swift; path = SetupDemo/MovieFeedResult.swift; sourceTree = "<group>"; };
+		09D5C3981FE3CC20009F87D9 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = SetupDemo/Movie.swift; sourceTree = "<group>"; };
 		7BC78C621FD66410007DEACC /* SetupDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetupDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +82,8 @@
 		7BC78C591FD66410007DEACC = {
 			isa = PBXGroup;
 			children = (
+				09D5C3981FE3CC20009F87D9 /* Movie.swift */,
+				09D5C3971FE3CC20009F87D9 /* MovieFeedResult.swift */,
 				09D5C3901FE3C425009F87D9 /* AppDelegate.swift */,
 				09D5C38F1FE3C425009F87D9 /* ViewController.swift */,
 				095B276C1FE3A90200042FC4 /* Helper */,
@@ -170,11 +176,13 @@
 				09D5C3921FE3C425009F87D9 /* AppDelegate.swift in Sources */,
 				09D5C3911FE3C425009F87D9 /* ViewController.swift in Sources */,
 				095B27761FE3A90200042FC4 /* MovieClient.swift in Sources */,
+				09D5C3991FE3CC21009F87D9 /* MovieFeedResult.swift in Sources */,
 				095B27751FE3A90200042FC4 /* Endpoint.swift in Sources */,
 				095B27771FE3A90200042FC4 /* MovieFeed.swift in Sources */,
 				09075EB31FE3A13E00D3AA66 /* ProtocolBasedNetworkingTutorialStarter.xcdatamodeld in Sources */,
 				095B27731FE3A90200042FC4 /* APIClient.swift in Sources */,
 				095B27741FE3A90200042FC4 /* APIError.swift in Sources */,
+				09D5C39A1FE3CC21009F87D9 /* Movie.swift in Sources */,
 				095B27781FE3A90200042FC4 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
