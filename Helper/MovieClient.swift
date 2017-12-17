@@ -3,8 +3,9 @@
 import Foundation
 
 class MovieClient: APIClient {
-    let session: URLSession
     
+    static let sharedClient = MovieClient()
+    let session: URLSession
     init(configuration: URLSessionConfiguration) {
         self.session = URLSession(configuration: configuration)
     }
