@@ -36,32 +36,43 @@ class ViewController: UIViewController {
 extension ViewController:UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        guard let count = self.movieResult?.results?.count else {
-            return 0
-        }
-       return count
+        return section == 0 ?  1 : self.movieResult?.results?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let movies = self.movieResult?.results else {
-            
-            return UITableViewCell()
+        let cell =  indexPath.section == 0 ? tableView.dequeueReusableCell(forIndexPath: indexPath) as MenuCell : tableView.dequeueReusableCell(forIndexPath: indexPath) as MovieCellTableViewCell
+        if let movieCell = cell as? MovieCellTableViewCell,let movies = self.movieResult?.results,
+            let eachmodel = movies[indexPath.row] as? Movie {
+            let eachViewModel = MovieViewModel.init(model: eachmodel)
+            movieCell.setUpWith(eachViewModel)
         }
-        let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as MovieCellTableViewCell
-        let movie = movies[indexPath.row]
-        let viewModel = MovieViewModel(model: movie)
-       cell.setUpWith(viewModel)
+        
         return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return section == 0 ? 44 : 30
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 30))
+        let sgement = UISegmentedControl(items: ["My info","My Design"])
+        sgement.frame = CGRect(x: 20, y: 0, width: self.view.bounds.width-40, height: 30)
+        sgement.backgroundColor = UIColor.white
+        sgement.tintColor = UIColor.brown
+        view.addSubview(sgement)
+        return section == 0 ? nil : view
+
+        
     }
     
     
