@@ -39,7 +39,7 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="79.5" id="95C-3u-cJG"/>
+                            <constraint firstAttribute="height" constant="80" id="prB-PW-L80"/>
                         </constraints>
                     </stackView>
                 </subviews>

@@ -64,17 +64,21 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+       
+        return section == 0 ? nil : getHeaderView()
+
+    }
+
+    func getHeaderView() -> UIView? {
+        
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 30))
         let sgement = UISegmentedControl(items: ["My info","My Design"])
         sgement.frame = CGRect(x: 20, y: 0, width: self.view.bounds.width-40, height: 30)
         sgement.backgroundColor = UIColor.white
         sgement.tintColor = UIColor.brown
         view.addSubview(sgement)
-        return section == 0 ? nil : view
-
-        
+        return view
     }
-    
     
 }
 

@@ -34,7 +34,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mlh-mc-a6O">
-                        <rect key="frame" x="5" y="121" width="320" height="20.5"/>
+                        <rect key="frame" x="10" y="121" width="320" height="20.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y79-YP-bym">
                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="20.5"/>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKo-HS-V76">
-                                <rect key="frame" x="-5" y="0.0" width="0.0" height="20.5"/>
+                                <rect key="frame" x="-10" y="0.0" width="0.0" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -56,10 +56,10 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="mlh-mc-a6O" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Vb5-eM-koh" secondAttribute="bottom" constant="10" id="3W0-0c-8hs"/>
-                    <constraint firstAttribute="trailing" secondItem="mlh-mc-a6O" secondAttribute="trailing" constant="5" id="PMz-4t-lpq"/>
+                    <constraint firstAttribute="trailing" secondItem="mlh-mc-a6O" secondAttribute="trailing" constant="10" id="PMz-4t-lpq"/>
                     <constraint firstItem="Vb5-eM-koh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Tec-JO-TFc"/>
                     <constraint firstItem="Vb5-eM-koh" firstAttribute="leading" secondItem="PBP-Wx-MkQ" secondAttribute="trailing" constant="5" id="Vmc-oA-uEQ"/>
-                    <constraint firstItem="mlh-mc-a6O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="cPB-0O-xh7"/>
+                    <constraint firstItem="mlh-mc-a6O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cPB-0O-xh7"/>
                     <constraint firstItem="mlh-mc-a6O" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PBP-Wx-MkQ" secondAttribute="bottom" constant="10" id="erB-8B-dJR"/>
                     <constraint firstItem="PBP-Wx-MkQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="gaq-h5-sGc"/>
                     <constraint firstAttribute="bottom" secondItem="mlh-mc-a6O" secondAttribute="bottom" constant="8" id="mRd-jr-yaQ"/>
